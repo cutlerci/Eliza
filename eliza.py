@@ -193,7 +193,7 @@ keywords = {
                           r"ARE YOU WORRIED ABOUT SOMEONE ELSE'S \2?",
                           r"REALLY, MY \2?"]],
     # The word "WAS" was included to address times the user may ask if the were wrong to do some action.
-    # Example, Was I wrong to point it out. Eliza would respond,  WHAT IF YOU WERE WRONG TO POINT IT OUT?".
+    # Example, Was I wrong to point it out. Eliza would respond,  "WHAT IF YOU WERE WRONG TO POINT IT OUT?".
     # It also handles cases where the user talks about something they were doing as well as something
     # the user perceives ELIZA was doing.
     # This first rule looks for a "WAS I" phrase transformed to "WAS YOU".
@@ -204,19 +204,17 @@ keywords = {
                            r"WHAT WOULD IT MEAN IF YOU WERE \2?",
                            r"WERE YOU \2?",
                            r"DO YOU THINK YOU WERE \2?",
-                           r"WHAT DOES ' \4 ' SUGGEST TO YOU?",
-                          ],
-                         [r"(.*)YOU\sWAS\s(.*)(\.|\!|\?)", 2,
-                          r"WERE YOU REALLY?",
-                          r"WHY DO YOU TELL ME YOU WERE \2 NOW?",
-                          r"PERHAPS I ALREADY KNEW YOU WERE \2?"],
-                         [r"(.*)WAS\sI\s(.*)(\.|\!|\?)", 2,
-                          r"WOULD YOU LIKE TO BELIEVE I WAS \2?",
-                          r"WHAT SUGGESTS THAT I WAS \2?",
-                          r"WHAT DO YOU THINK?",
-                          r"MAYBE I WAS \2?"
-                          r"WHAT IF I HAD BEEN \2?",
-                          ]],
+                           r"WHAT DOES ' \4 ' SUGGEST TO YOU?"],
+                          [r"(.*)YOU\sWAS\s(.*)(\.|\!|\?)", 2,
+                           r"WERE YOU REALLY?",
+                           r"WHY DO YOU TELL ME YOU WERE \2 NOW?",
+                           r"PERHAPS I ALREADY KNEW YOU WERE \2?"],
+                          [r"(.*)WAS\sI\s(.*)(\.|\!|\?)", 2,
+                           r"WOULD YOU LIKE TO BELIEVE I WAS \2?",
+                           r"WHAT SUGGESTS THAT I WAS \2?",
+                           r"WHAT DO YOU THINK?",
+                           r"MAYBE I WAS \2?"
+                           r"WHAT IF I HAD BEEN \2?"]],
     # The word "WERE" was chosen to address questions the user might have in the pest tense of are.
     # The word functions the same as WAS and is transformed equivalently.
     "WERE": [0, "WAS", 0, ["=WAS"]],
@@ -307,14 +305,13 @@ keywords = {
                         r"DO YOU WISH TO \2 ME?",
                         r"YOU SEEM TO NEED TO \2 ME."]],
     # The word "YOU" was selected to allow for ELIZA to respond to questions about ELIZA's personal being.
-    # The "YOU ARE" phrases are transformed to "I ARE" phrases catch qstatements about what ELIZA may be.
+    # The "YOU ARE" phrases are transformed to "I ARE" phrases catch statements about what ELIZA may be.
     # The "YOU ... ME" phrases are transformed to "I ... YOU"
     # phrases to catch statements about something ELIZA "feels" about the user. Such as "DO YOU LIKE ME?"
     "YOU": [0, "I", 0, [r"(.*)I\sARE(.*)(\.|\?|!)", 2,
                         r"WHAT MAKES YOU THINK I AM\2?",
                         r"DOES IT MAKE YOU HAPPY TO THINK I AM\2?",
-                        r"DO YOU SOMETIMES WISH YOU WERE\2?",
-                        ],
+                        r"DO YOU SOMETIMES WISH YOU WERE\2?"],
                        [r"(.*)I\s(.*)\sYOU(\.|\?|!)", 2,
                         r"WHY DO YOU THINK I \2 YOU?",
                         r"WHAT MAKES YOU THINK I \2 YOU?",
