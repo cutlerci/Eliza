@@ -5,7 +5,7 @@ My name is Charles Ian Cutler, CIC, currently enrolled in the College of Enginee
 This repository is for a project in Virginia Commonwealth University course CMSC 416, Introduction Natural Language Processing, Spring 2022.
 ## Repository Files
 1) eliza.py -- The program itself.
-2) CIC_pseduocode_Design_Process.pdf -- A PDF of my hand drawn pseudo code I used to ultimately develop my project.
+2) CIC_pseudocode_Design_Process.pdf -- A PDF of my hand drawn pseudo code I used to ultimately develop my project.
 ## ELIZA Description
  The following program is for the first programming assignment in the course
  CMSC 416, Intro to Natural Language Processing, at Virginia Commonwealth University
