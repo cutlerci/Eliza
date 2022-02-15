@@ -1,6 +1,6 @@
 ![VCU Logo](https://ocpe.vcu.edu/media/ocpe/images/logos/bm_CollEng_CompSci_RF2_hz_4c.png)
 
-# Cutlerci-CMSC312-FinalProject
+# Cutlerci-CMSC416-Project 1
 My name is Charles Ian Cutler, CIC, currently enrolled in the College of Engineering at Virginia Commonwealth Univeristy. 
 This repository is for a project in Virginia Commonwealth University course CMSC 416, Introduction Natural Language Processing, Spring 2022.
 ## Repository Files
